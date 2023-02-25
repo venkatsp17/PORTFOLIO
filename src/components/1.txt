@@ -1,0 +1,19 @@
+      {/* <div className='cont8'>
+        <BsFillArrowLeftCircleFill className='arrow' size={50} onClick={prevImage} style={{color:"#ffffff"}}/>
+        <div className='maincont'>
+
+          {
+            props.project.map((item, index) => {
+              return (
+                <div className='mchild' key={index} style={{ backgroundImage: `url(${item.image})`, display: currentImageIndex === index ? "flex" : "none" }}>
+                  <div className='child1'>
+                    <p className='title'>{item.title}</p>
+                    <p className='des'>{item.description}</p>
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
+        <BsFillArrowRightCircleFill className='arrow1' size={50} onClick={nextImage} style={{ color: "#ffffff" }} />
+      </div> */}

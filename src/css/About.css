@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+
+.main4 {
+    background-color: #292929;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px, solid, red; */
+}
+
+.main4>p {
+    font-size: 3em;
+    font-family: "prompt", 'sans-serif';
+    color: #ffffff;
+}

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+
+.last {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+}
+
+.main1 {
+    /* border: 1px solid green; */
+    height: 100vh;
+    width: 100vw;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fp {
+    color: #ffffff;
+    font-family: 'prompt', sans-serif;
+    font-size: 3em;
+}
+
+.container1 {
+    /* border: 1px solid red; */
+    font-size: 1.5em;
+    color: #ffffff;
+    font-family: 'prompt', sans-serif;
+    width: 50%;
+    padding-left: 5%;
+    /* padding-top: 3%; */
+    padding-bottom: 5%;
+    height: 60vh;
+    background-color: #4D4D4D;
+}
+/* 
+.fp {
+    display: none;
+} */
+
+.pagination1 {
+    display: none;
+}
+
+.container {
+    /* border: 1px solid yellow; */
+    gap: 10px;
+    height: 60vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.outer-container {
+    height: 70vh;
+    width: 40%;
+}
+
+.small-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d4d4d;
+    height: 200px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.small-cont p {
+    font-size: 1.5em;
+    font-family: 'prompt', sans-serif;
+}
+
+.small-cont:hover {
+    transition: all 500ms;
+    position: relative;
+}
+
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5,
+.logo6 {
+    height: 60px;
+    width: 60px;
+}
+
+.skill1,
+.skill2,
+.skill3 {
+    height: 60px;
+    width: 60px;
+}
+
+.small-cont:hover .logo1 {
+    color: #FFA611;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.small-cont:hover .logo2 {
+    color: aliceblue;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.small-cont:hover .logo3 {
+    color: #42A5F5;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.small-cont:hover .logo4 {
+    color: #092e20;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+
+.small-cont:hover .logo5 {
+    color: #61dbfb;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+
+
+.small-cont:hover .logo6 {
+    color: #6cc24a;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+
+
+.small-cont:hover p {
+    color: #ffff;
+}
+
+.change {
+    margin-top: 50px;
+}
+
+.change1 {
+    margin-top: 30px;
+}
+
+.flex2 {
+    width: 40%;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:414px) {
+
+    .skill2,
+    .skill3 {
+        height: 40px;
+        width: 40px;
+    }
+
+    .skill1 {
+        height: 38px;
+        width: 38px;
+    }
+
+    .main1 {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .outer-container {
+        height: 100%;
+    }
+    .container {
+        /* border: 1px solid red; */
+        grid-template-columns: auto auto;
+        height: 70vh;
+        width: 100%;
+    }
+
+    .outer-container {
+        /* border: 1px solid red; */
+        height: 70vh;
+        width: 60%;
+    }
+
+    .pagination1 {
+        margin: 10%;
+        flex-direction: row;
+        display: initial;
+    }
+
+    .container1 {
+        /* border: 1px solid red; */
+        justify-content: center;
+        width: 50%;
+        height: 70vh;
+        font-size: 1em;
+    }
+
+    .flex2 {
+        width: 100%;
+        font-size: 0.8em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .flex1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .ab {
+        display: none;
+    }
+
+    .small-cont {
+        margin-top: 0;
+        height: 150px;
+        width: 100px;
+    }
+
+    .small-cont p {
+        font-size: 1em;
+        font-family: 'prompt', sans-serif;
+    }
+
+    .logo1,
+    .logo2,
+    .logo3,
+    .logo4,
+    .logo5,
+    .logo6 {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
+/* 
+.row1 {
+    position: absolute;
+    margin-top: -300px;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.row3 {
+    position: absolute;
+    margin-top: 300px;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+} */
