@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import Home from './components/Home'
 import Project from './components/Project'
 import Skills from './components/Skills'
@@ -46,12 +46,44 @@ const Projects = [
 
 
 const Main = () => {
+
+  const ref = useRef(null);
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const handleclick = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleclick1 = () => {
+    ref1.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleclick2 = () => {
+    ref2.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleclick3 = () => {
+    ref3.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  let clicks = {
+    click1: handleclick,
+    click2: handleclick1,
+    click3: handleclick2,
+    click4: handleclick3
+  };
+
   return (
     <div>
-        <Home/>
+      <div ref={ref}>
+        <Home clicks={clicks}/>
+      </div>
+      <div ref={ref1}>
         <Skills/>
+      </div>
+      <div ref={ref2}>
         <Project project = {Projects}/>
+      </div>
+      <div ref={ref3}>
         <About/>
+      </div>
     </div>
   )
 }

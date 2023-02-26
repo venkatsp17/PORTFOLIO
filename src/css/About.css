@@ -16,3 +16,40 @@
     font-family: "prompt", 'sans-serif';
     color: #ffffff;
 }
+
+.image {
+    height: 90%;
+    width: 25%;
+}
+
+.row {
+    color: #ffffff;
+    margin: 3%;
+    align-items: center;
+    font-family: "prompt", 'sans-serif';
+    display: flex;
+    justify-content: space-around;
+}
+
+.row>p {
+    font-size: 1.5em;
+    width: 60%;
+}
+
+@media screen and (max-width:414px) {
+    .row {
+        flex-direction: column;
+    }
+    .image{
+        height: 100%;
+        width: 50%;
+    }
+
+    .row>p {
+        text-align: center;
+        font-size: 1em;
+        width: 60%;
+    }
+
+
+}

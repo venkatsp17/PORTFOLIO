@@ -4,17 +4,18 @@ import { SiFlutter, SiCplusplus, SiPython, SiC } from "react-icons/si";
 import { SiFlask, SiMongodb, SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 import { SiFirebase, SiHackerrank, SiAndroidstudio } from "react-icons/si";
 import { SiDjango, SiVisualstudiocode } from "react-icons/si";
-import { SiReact } from "react-icons/si";
+import { SiReact, SiPycharm } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
+import Zoom from "react-reveal";
 
 
 const Skills = () => {
   const [view, setview] = useState(1);
   return (
     <div className='last'>
-      <p className='fp'>Skills</p>
+      <Zoom><p className='fp'>Skills</p></Zoom>
       <div className='main1'>
-        <div className={`${view === 0 ? "container1" : "container1 ab"}`}>
+        <Zoom left cascade> <div className={`${view === 0 ? "container1" : "container1 ab"}`}>
           <p>Technical Skills</p>
           <div className='flex2'>
             <SiC className='skill1' style={{ color: "#283593" }} />
@@ -37,9 +38,12 @@ const Skills = () => {
             <div className='flex2'>
               <SiAndroidstudio className='skill1' style={{ color: "#3DDC84" }} />
               <SiVisualstudiocode className='skill1' style={{ color: "#0078d7" }} />
+              <SiPycharm className='skill1' style={{ color: "black" }} />
             </div>
           </div>
         </div>
+        </Zoom>
+        <Zoom right cascade>
         <div className={`${view === 0 ? "outer-container ab" : "outer-container"}`}>
           <div className={`${view === 1 ? "container" : "container ab"}`}>
             <div className='small-cont'>
@@ -68,6 +72,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
+        </Zoom>
         <div className='pagination1'>
           <input id="switch 1" type="radio" name="dots1" onClick={() => setview(1)} />
           <label htmlFor="switch 1"></label>

@@ -46,7 +46,7 @@
 
 .cell:hover {
     transform: scale(110%);
-
+    z-index: 2;
 }
 
 .cell:hover>.child1 {

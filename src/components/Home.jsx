@@ -4,7 +4,7 @@ import profile from '../assets/123.jpg'
 import { ImLinkedin2, ImGithub } from 'react-icons/im'
 import { AiOutlineMail } from 'react-icons/ai'
 // rafce
-const Home = () => {
+const Home = (props) => {
   return (
     <div className='main'>
       <div className='header'>
@@ -22,19 +22,19 @@ const Home = () => {
         <p className='content1'>FULL  STACK  DEVELOPER</p>
         <h1>VENKAT RAMAN S P</h1>
         <div className='menu'>
-          <p>SKILLS</p>
-          <p>PROJECTS</p>
-          <p>ABOUT</p>
+          <p onClick={props.clicks.click2}>SKILLS</p>
+          <p onClick={props.clicks.click3}>PROJECTS</p>
+          <p onClick={props.clicks.click4}>ABOUT</p>
         </div>
       </div>
       <div class="pagination">
-        <input id="dot-1" type="radio" name="dots"/>
+        <input id="dot-1" type="radio" name="dots" onClick={props.clicks.click1}/>
         <label htmlFor="dot-1"></label>
-        <input id="dot-2" type="radio" name="dots" />
+        <input id="dot-2" type="radio" name="dots" onClick={props.clicks.click2} />
         <label htmlFor="dot-2"></label>
-        <input id="dot-3" type="radio" name="dots" />
+        <input id="dot-3" type="radio" name="dots" onClick={props.clicks.click3} />
         <label htmlFor="dot-3"></label>
-        <input id="dot-4" type="radio" name="dots" />
+        <input id="dot-4" type="radio" name="dots" onClick={props.clicks.click4} />
         <label htmlFor="dot-4"></label>
       </div>
     </div>

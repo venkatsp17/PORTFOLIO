@@ -2,11 +2,13 @@ import React from 'react'
 import '../css/Project.css'
 import { ImGithub } from 'react-icons/im'
 import { MdSettingsInputAntenna } from 'react-icons/md'
+import Zoom from "react-reveal";
 
 const Project = (props) => {
   return (
     <div className='main3'>
-      <p>Works</p>
+      <Zoom> <p>Works</p></Zoom>
+      <Zoom up cascade>
       <div className='conta'>
         {
           props.project.map((item, index) => {
@@ -30,6 +32,7 @@ const Project = (props) => {
           })
         }
       </div>
+      </Zoom>
     </div>
   )
 }

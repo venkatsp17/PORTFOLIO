@@ -34,7 +34,7 @@
     padding-left: 5%;
     /* padding-top: 3%; */
     padding-bottom: 5%;
-    height: 60vh;
+    height: 70vh;
     background-color: #4D4D4D;
 }
 /* 
@@ -183,7 +183,7 @@
     .container {
         /* border: 1px solid red; */
         grid-template-columns: auto auto;
-        height: 70vh;
+        height: 60vh;
         width: 100%;
     }
 
@@ -203,7 +203,7 @@
         /* border: 1px solid red; */
         justify-content: center;
         width: 50%;
-        height: 70vh;
+        height: 65vh;
         font-size: 1em;
     }
 
