@@ -63,6 +63,14 @@ const Main = () => {
   const handleclick3 = () => {
     ref3.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  let checks = {
+    check1: true,
+    check2: false,
+    check3: false,
+    check4: false,
+  };
+
   let clicks = {
     click1: handleclick,
     click2: handleclick1,
@@ -73,7 +81,7 @@ const Main = () => {
   return (
     <div>
       <div ref={ref}>
-        <Home clicks={clicks}/>
+        <Home clicks={clicks}  checks={checks}/>
       </div>
       <div ref={ref1}>
         <Skills/>
