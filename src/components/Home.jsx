@@ -8,23 +8,23 @@ const Home = (props) => {
 
 
   const [c, Setc] = useState(props.checks);
-  React.useEffect(() => {
-    console.log(window.screenY);
-    window.addEventListener('scroll', (event) => {
-      if (window.screenY <=100) {
-        Setc({ check1: false, check2: true, check3: false, check4: false });
-      }
-      else if (window.screenY >= 400 && window.screenY < 700){
-        Setc({ check1: false, check2: true, check3: false, check4: false });
-      }
-      else if (window.screenY >= 700 && window.screenY <=800){
-        Setc({ check1: false, check2: false, check3: true, check4: false });
-      }
-      else if (window.screenY > 800) {
-        Setc({ check1: false, check2: false, check3: false, check4: true});
-      }
-    });
-  }, [window.scrollY]);
+  // React.useEffect(() => {
+  //   console.log(window.screenY);
+  //   window.addEventListener('scroll', (event) => {
+  //     if (window.screenY <=100) {
+  //       Setc({ check1: false, check2: true, check3: false, check4: false });
+  //     }
+  //     else if (window.screenY >= 400 && window.screenY < 700){
+  //       Setc({ check1: false, check2: true, check3: false, check4: false });
+  //     }
+  //     else if (window.screenY >= 700 && window.screenY <=800){
+  //       Setc({ check1: false, check2: false, check3: true, check4: false });
+  //     }
+  //     else if (window.screenY > 800) {
+  //       Setc({ check1: false, check2: false, check3: false, check4: true});
+  //     }
+  //   });
+  // }, [window.scrollY]);
 
   return (
     <div className='main'>
