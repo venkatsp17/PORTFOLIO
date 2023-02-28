@@ -48,7 +48,7 @@ const Home = (props) => {
           <p onClick={() => { props.clicks.click4(); Setc({ check1: false, check2: false, check3: false, check4: true }) }}>ABOUT</p>
         </div>
       </div>
-      <div class="pagination">
+      {/* <div class="pagination">
         <input id="dot-1" type="radio" name="dots" onClick={()=>{props.clicks.click1(); Setc({check1:true, check2: false, check3: false,check4: false})}} checked={c.check1}/>
         <label htmlFor="dot-1"></label>
         <input id="dot-2" type="radio" name="dots" onClick={() => { props.clicks.click2(); Setc({ check1: false, check2: true, check3: false, check4: false }) }} checked={c.check2} />
@@ -57,7 +57,7 @@ const Home = (props) => {
         <label htmlFor="dot-3"></label>
         <input id="dot-4" type="radio" name="dots" onClick={() => { props.clicks.click4(); Setc({ check1: false, check2: false, check3: false, check4: true }) }} checked={c.check4} />
         <label htmlFor="dot-4"></label>
-      </div>
+      </div> */}
     </div>
   )
 }
